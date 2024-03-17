@@ -48,7 +48,7 @@ const SlickSlider = () => {
           <div key={i} className="comment">
             {/*Upper Side */}
             <div className="c-content">
-              <Image
+              <img
                 src={"/apos.svg"}
                 className="apos-slider"
                 alt="apos"
