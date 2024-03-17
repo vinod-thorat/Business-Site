@@ -1,0 +1,117 @@
+.n-wrapper {
+  background-color: var(--primary-color);
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+.sticky {
+  position: fixed;
+  box-shadow: 10px 12px 48px rgba(181, 187, 203, 0.206);
+  background-color: white;
+  top: 0;
+}
+
+.n-container {
+  padding: 1.5rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sticky .n-container {
+  color: var(--title-color);
+  padding: 1rem;
+}
+.n-logo {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.n-right {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 0.9rem;
+}
+
+.n-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.n-menu span {
+  cursor: pointer;
+}
+
+.fund-button {
+  color: var(--dark-bg);
+  background-color: var(--third-color);
+  padding: 1rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.nm-container {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  .n-container {
+    display: none;
+  }
+  .nm-container {
+    display: block;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    background-color: var(--primary-color);
+  }
+
+  .nm-container > :nth-child(1) {
+    font-weight: bold;
+  }
+
+  .nm-menu {
+    position: fixed;
+    top: 3.9rem;
+    left: 0;
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 3.9rem);
+    transform: translateX(-150%);
+    transition: all 300ms ease-in-out;
+    font-size: 1.2rem;
+    z-index: 99;
+    background: var(--primary-color);
+  }
+  .nm-menu a {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .mf-button {
+    width: 100%;
+    background-color: var(--third-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem 0;
+    border-radius: 999px;
+    color: var(--dark-bg);
+  }
+}
