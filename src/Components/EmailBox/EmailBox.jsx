@@ -31,6 +31,8 @@ const EmailBox = () => {
         whileInView={"onscreen"}
         viewport={{ once: true }}
         type="email"
+        name="email"
+        autoComplete="email"
         placeholder="Enter Email "
       />
       {/*G F Button */}
